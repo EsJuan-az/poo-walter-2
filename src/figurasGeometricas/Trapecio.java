@@ -5,7 +5,7 @@ package figurasGeometricas;
  * base mayor, una base menor y una altura como atributos.
  */
 
-public class Trapecio {
+public class Trapecio implements FiguraGeometrica {
     int baseMayor; // Atributo que define la base mayor de un trapecio
     int baseMenor; // Atributo que define la base menor de un trapecio
     int altura; // Atributo que define la altura de un trapecio
@@ -28,8 +28,8 @@ public class Trapecio {
      * suma de las bases por la altura dividido entre 2
      * @return Área de un trapecio
      */
-
-    double calcularArea() {
+    @Override
+    public double calcularArea() {
         return ((baseMayor + baseMenor) / 2) * altura;
     }
 
@@ -38,8 +38,8 @@ public class Trapecio {
      * como la suma de sus lados
      * @return Perímetro de un trapecio
      */
-
-    double calcularPerimetro() {
+    @Override
+    public double calcularPerimetro() {
         return baseMayor + baseMenor + (2 * Math.sqrt(Math.pow((baseMayor - baseMenor), 2) + Math.pow(altura, 2)));
     }
 }

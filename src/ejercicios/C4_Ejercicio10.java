@@ -1,7 +1,7 @@
-package actividad.pkg2;
+package ejercicios;
 import java.util.Scanner;
 
-public class Ejercicio10 { 
+public class C4_Ejercicio10 { 
     
     public static void main(String[] args) {
         double ninsc, patrimonio, estrato, pmatricula; 

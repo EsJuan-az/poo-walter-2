@@ -4,7 +4,7 @@ package figurasGeometricas;
  * Esta clase define objetos de tipo Cuadrado con un lado como atributo.
  * @version 1.2/2020
  */
-public class Cuadrado {
+public class Cuadrado implements FiguraGeometrica {
     int lado; // Atributo que define el lado de un cuadrado
 
     /**
@@ -20,7 +20,8 @@ public class Cuadrado {
      * lado elevado al cuadrado
      * @return Área de un Cuadrado
      */
-    double calcularArea() {
+    @Override
+    public double calcularArea() {
         return lado * lado;
     }
 
@@ -29,7 +30,8 @@ public class Cuadrado {
      * cuatro veces su lado
      * @return Perímetro de un cuadrado
      */
-    double calcularPerimetro() {
+    @Override
+    public double calcularPerimetro() {
         return 4 * lado;
     }
 }

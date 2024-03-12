@@ -4,14 +4,14 @@ package figurasGeometricas;
  * Esta clase define objetos de tipo Círculo con su radio como atributo.
  * @version 1.2/2020
  */
-public class Circulo {
+public class Circulo implements FiguraGeometrica {
     int radio; // Atributo que define el radio de un círculo
 
     /**
      * Constructor de la clase Círculo
      * @param radio Parámetro que define el radio de un círculo
      */
-    Circulo(int radio) {
+    public Circulo(int radio) {
         this.radio = radio;
     }
 
@@ -20,7 +20,8 @@ public class Circulo {
      * multiplicado por el radio al cuadrado
      * @return Área de un círculo
      */
-    double calcularArea() {
+    @Override
+    public double calcularArea() {
         return Math.PI * Math.pow(radio, 2);
     }
 
@@ -29,7 +30,8 @@ public class Circulo {
      * multiplicación de pi por el radio por 2
      * @return Perímetro de un círculo
      */
-    double calcularPerimetro() {
+    @Override
+    public double calcularPerimetro() {
         return 2 * Math.PI * radio;
     }
 }

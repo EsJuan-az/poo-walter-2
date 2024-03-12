@@ -5,7 +5,7 @@ package figurasGeometricas;
  * base y una altura como atributos.
  * @version 1.2/2020
  */
-public class TrianguloRectangulo {
+public class TrianguloRectangulo implements FiguraGeometrica {
     int base; // Atributo que define la base de un triángulo rectángulo
     int altura; // Atributo que define la altura de un triángulo rectángulo
 
@@ -24,7 +24,8 @@ public class TrianguloRectangulo {
      * como la base multiplicada por la altura sobre 2
      * @return Área de un triángulo rectángulo
      */
-    double calcularArea() {
+    @Override
+    public double calcularArea() {
         return (base * altura / 2);
     }
 
@@ -33,7 +34,8 @@ public class TrianguloRectangulo {
      * como la suma de la base, la altura y la hipotenusa
      * @return Perímetro de un triángulo rectángulo
      */
-    double calcularPerimetro() {
+    @Override
+    public double calcularPerimetro() {
         return (base + altura + calcularHipotenusa()); /* Invoca al método calcular hipotenusa */
     }
 

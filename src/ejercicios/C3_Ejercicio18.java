@@ -1,4 +1,4 @@
-package actividad.pkg2;
+package ejercicios;
 import java.util.Scanner;
 
 public class C3_Ejercicio18 {

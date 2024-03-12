@@ -1,7 +1,7 @@
 package actividad.pkg2;
 import java.util.Scanner;
 
-public class Ejercicio07 {
+public class C4_Ejercicio07 {
 
     public static void main(String[] args) {
         double a, b;

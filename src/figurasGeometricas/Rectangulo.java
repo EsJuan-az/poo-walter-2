@@ -5,7 +5,7 @@ package figurasGeometricas;
  * altura como atributos.
  * @version 1.2/2020
  */
-public class Rectangulo {
+public class Rectangulo implements FiguraGeometrica{
     int base; // Atributo que define la base de un rectángulo
     int altura; // Atributo que define la altura de un rectángulo
 
@@ -14,7 +14,7 @@ public class Rectangulo {
      * @param base Parámetro que define la base de un rectángulo
      * @param altura Parámetro que define la altura de un rectángulo
      */
-    Rectangulo(int base, int altura) {
+    public Rectangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
@@ -24,7 +24,8 @@ public class Rectangulo {
      * multiplicación de la base por la altura
      * @return Área de un rectángulo
      */
-    double calcularArea() {
+    @Override
+    public double calcularArea() {
         return base * altura;
     }
 
@@ -33,7 +34,8 @@ public class Rectangulo {
      * como (2 * base) + (2 * altura)
      * @return Perímetro de un rectángulo
      */
-    double calcularPerimetro() {
+    @Override
+    public double calcularPerimetro() {
         return (2 * base) + (2 * altura);
     }
 }
